@@ -10,16 +10,25 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Validate request body
       const validatedData = insertLeadSchema.parse(req.body);
       
-      // In a real implementation, this would save to Google Sheets via Google Apps Script
-      // For now, we'll just log the data and return success
       console.log("Lead submission:", validatedData);
       
-      // Here you would integrate with Google Apps Script:
-      // const response = await fetch(process.env.GOOGLE_APPS_SCRIPT_URL, {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(validatedData)
-      // });
+      // Send data to Google Apps Script
+      const googleScriptUrl = "https://script.google.com/macros/s/AKfycbzgpFHsQhQsjgnoodXEek2WjJqBH7OF0vG5geTwp3zld5q4Y_NvRYBj4lvJFIwii0T_MA/exec";
+      
+      const response = await fetch(googleScriptUrl, {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(validatedData)
+      });
+      
+      if (!response.ok) {
+        throw new Error(`Google Apps Script responded with status: ${response.status}`);
+      }
+      
+      const result = await response.text();
+      console.log("Google Apps Script response:", result);
       
       res.json({ 
         success: true, 
