@@ -34,14 +34,14 @@ export default function PainPoints() {
           <p className="text-xl text-gray-600">Reconhece alguns destes desafios no seu dia a dia?</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {painPoints.map((point, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 text-center shadow-sm card-hover fade-in">
-              <div className={`w-16 h-16 bg-${point.color}-100 rounded-full flex items-center justify-center mx-auto mb-4`}>
-                <i className={`${point.icon} text-${point.color}-500 text-2xl`}></i>
+            <div key={index} className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 card-hover fade-in">
+              <div className="w-20 h-20 bg-gradient-to-br from-red-50 to-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i className={`${point.icon} text-red-500 text-3xl`}></i>
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-primary">{point.title}</h3>
-              <p className="text-gray-600 text-sm">{point.description}</p>
+              <h3 className="font-bold text-xl mb-3 text-primary leading-tight">{point.title}</h3>
+              <p className="text-gray-600 text-base leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>

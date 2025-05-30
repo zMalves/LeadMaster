@@ -45,7 +45,6 @@ export default function Home() {
       <Solution />
       <Process />
       <Benefits />
-      <CTA scrollToForm={scrollToForm} />
       <ContactForm />
       <Footer />
     </div>

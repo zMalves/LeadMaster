@@ -24,7 +24,7 @@ export default function Benefits() {
     {
       gradient: "from-orange-50 to-orange-100",
       iconBg: "bg-orange-500",
-      icon: "fas fa-target",
+      icon: "fas fa-bullseye",
       title: "Foco no que dá resultado",
       description: "Identifique e potencialize seus melhores resultados"
     }

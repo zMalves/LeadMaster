@@ -31,13 +31,15 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.number} className="text-center fade-in">
-              <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-primary font-bold text-2xl">{step.number}</span>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-sm card-hover">
-                <i className={`${step.icon} text-primary text-3xl mb-4`}></i>
-                <h3 className="font-semibold text-xl text-primary mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+              <div className="bg-white rounded-2xl p-8 shadow-lg card-hover relative">
+                <div className="absolute top-4 left-4 w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-primary font-bold text-sm">{step.number}</span>
+                </div>
+                <div className="pt-4">
+                  <i className={`${step.icon} text-primary text-4xl mb-6`}></i>
+                  <h3 className="font-bold text-xl text-primary mb-4 leading-tight">{step.title}</h3>
+                  <p className="text-gray-600 text-base leading-relaxed">{step.description}</p>
+                </div>
               </div>
             </div>
           ))}
