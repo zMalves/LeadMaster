@@ -1,0 +1,137 @@
+🧱 INSTRUÇÃO COMPLETA PARA CRIAÇÃO DO SITE
+🗂️ OBJETIVO DO SITE
+Captar leads qualificados que queiram uma consultoria para transformar seus dados em dashboards com Power BI.
+O orçamento é personalizado, e o objetivo da página é levar o visitante a preencher um formulário para falar com um consultor.
+
+🌐 ESTRUTURA DO SITE (SEÇÕES)
+1. Hero (acima da dobra)
+📌 Impacto inicial + ação direta
+
+Headline:
+
+Transforme dados em decisões inteligentes
+
+Subheadline:
+
+Dashboards personalizados em Power BI para seu negócio ter mais clareza e resultado.
+
+Botão CTA:
+
+“Fale com um consultor” (rolagem suave até o formulário)
+
+2. Você vive isso? (Dores comuns)
+📌 Conecta com a dor do visitante
+
+“Decide com base em achismo?”
+
+“Não sabe o que mais vende?”
+
+“Não acompanha os números do negócio?”
+
+“Sente que está no escuro?”
+
+🟨 Visual: ícones + frases curtas em cards sobre fundo cinza claro #F5F7F7
+
+3. Como o serviço resolve isso
+📌 Explica de forma simples
+
+Dashboards criados a partir dos seus dados reais
+
+Visual simples, com foco em vendas, lucros e decisões
+
+Sem precisar dominar planilhas ou BI
+
+4. Como funciona (3 etapas)
+📌 Dá segurança e mostra simplicidade
+
+Entendimento do seu negócio
+
+Conexão com os dados que você já usa
+
+Dashboard entregue com insights claros
+
+🎯 Visual: 3 ícones + breve descrição
+
+5. Benefícios para o seu negócio
+📌 Mostra os ganhos reais
+
+Clareza sobre vendas e finanças
+
+Menos tempo com planilhas
+
+Decisões mais seguras e rápidas
+
+Foco no que dá resultado
+
+6. Chamada para ação forte (antes do formulário)
+📌 Incentiva o clique
+
+📈 Quer enxergar melhor os números do seu negócio?
+📩 Fale com um consultor e descubra o que seus dados têm a dizer.
+
+7. Formulário de contato (Google Sheets)
+📌 Converte o visitante em lead
+
+Título:
+Quero conversar com um consultor
+
+Campos:
+Nome (obrigatório)
+
+E-mail (obrigatório)
+
+WhatsApp (obrigatório)
+
+Empresa
+
+Qual o maior desafio hoje com dados? (área de texto)
+
+🟨 Botão: “Enviar e agendar conversa”
+
+📩 Integração: usar Google Apps Script para salvar os dados direto em uma planilha Google Sheets (posso fornecer o script)
+
+8. Rodapé
+Nome do negócio / logo
+
+Slogan: Inteligência de Dados e Negócios
+
+Links para Instagram, WhatsApp e e-mail
+
+© 2025 – Todos os direitos reservados
+
+🎨 IDENTIDADE VISUAL
+Elemento	Cor
+Primária	#344443 (verde-petróleo)
+Secundária	#FFFFFF
+Destaque (CTA)	#FFD700 (amarelo ouro)
+Suporte (fundo leve)	#F5F7F7
+Fonte recomendada	Poppins ou Inter
+
+🧩 FUNCIONALIDADES TÉCNICAS
+Recurso	Instrução Técnica
+Formulário ativo	Google Apps Script com endpoint POST
+Responsivo	Mobile-first, grid flexível
+Botão CTA	Rolagem suave até formulário
+Animação leve	Fade-in em seções
+SEO básico	Title, Meta Description, OpenGraph para Instagram/WhatsApp
+Acessibilidade	Contraste AA, alt-text nas imagens
+
+📄 EXEMPLO DE COPY PARA O FORMULÁRIO (resposta de sucesso)
+Obrigado! Em breve um de nossos consultores vai entrar em contato com você via WhatsApp.
+
+✅ CHECKLIST PARA O DESENVOLVEDOR
+ Estrutura HTML semântica
+
+ Layout responsivo (mobile e desktop)
+
+ Fontes carregadas via Google Fonts
+
+ CSS modular com cores e espaçamentos padronizados
+
+ Botão com hover/feedback visual
+
+ Script de envio para Google Sheets testado
+
+ Scroll suave para seções
+
+ SEO básico: title, favicon, meta description
