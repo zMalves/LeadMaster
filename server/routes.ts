@@ -13,7 +13,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.log("Lead submission:", validatedData);
       
       // Send data to Google Apps Script
-      const googleScriptUrl = "https://script.google.com/macros/s/AKfycbzgpFHsQhQsjgnoodXEek2WjJqBH7OF0vG5geTwp3zld5q4Y_NvRYBj4lvJFIwii0T_MA/exec";
+      const googleScriptUrl = "https://script.google.com/macros/s/AKfycbwxQvRDB2gQNCqemiySHP5HF2Qjmp4BGJ-EjZAw1hRHzY4kaPE5fD_Y7gC2FqQXeAJC-g/exec";
       
       const response = await fetch(googleScriptUrl, {
         method: 'POST',
