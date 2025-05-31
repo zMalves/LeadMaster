@@ -79,29 +79,12 @@
   .btn-cta {
     background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .btn-cta::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
-  }
-  
-  .btn-cta:hover::before {
-    left: 100%;
   }
   
   .btn-cta:hover {
     background: linear-gradient(135deg, #FFC000 0%, #FFB000 100%);
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
   }
   
   .card-hover {
@@ -111,21 +94,5 @@
   .card-hover:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(52, 68, 67, 0.1);
-  }
-  
-  .bg-grid-pattern {
-    background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 20px 20px;
-  }
-  
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
-  
-  .animate-float {
-    animation: float 3s ease-in-out infinite;
   }
 }
