@@ -1,0 +1,74 @@
+[u150266992@br-asc-web1845 services]$ pm2 start ecosystem.config.js
+pm2 save
+pm2 startup
+
+                        -------------
+
+__/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
+ _\/\\\/////////\\\_\/\\\\\\________/\\\\\\__/\\\///////\\\___
+  _\/\\\_______\/\\\_\/\\\//\\\____/\\\//\\\_\///______\//\\\__
+   _\/\\\\\\\\\\\\\/__\/\\\\///\\\/\\\/_\/\\\___________/\\\/___
+    _\/\\\/////////____\/\\\__\///\\\/___\/\\\________/\\\//_____
+     _\/\\\_____________\/\\\____\///_____\/\\\_____/\\\//________
+      _\/\\\_____________\/\\\_____________\/\\\___/\\\/___________
+       _\/\\\_____________\/\\\_____________\/\\\__/\\\\\\\\\\\\\\\_
+        _\///______________\///______________\///__\///////////////__
+
+
+                          Runtime Edition
+
+        PM2 is a Production Process Manager for Node.js applications
+                     with a built-in Load Balancer.
+
+                Start and Daemonize any application:
+                $ pm2 start app.js
+
+                Load Balance 4 instances of api.js:
+                $ pm2 start api.js -i 4
+
+                Monitor in production:
+                $ pm2 monitor
+
+                Make pm2 auto-boot at server restart:
+                $ pm2 startup
+
+                To go further checkout:
+                http://pm2.io/
+
+
+                        -------------
+
+[PM2] Spawning PM2 daemon with pm2_home=/home/u150266992/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2][ERROR] File ecosystem.config.js malformated
+ReferenceError: module is not defined
+    at file:///home/u150266992/domains/sketchdata.com.br/public_html/services/ecosystem.config.js:1:1
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:387:35)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:323:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1371:24)
+    at Module._compile (node:internal/modules/cjs/loader:1511:5)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1572:16)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+[PM2] Saving current process list...
+[PM2][WARN] PM2 is not managing any process, skipping save...
+[PM2][WARN] To force saving use: pm2 save --force
+[PM2][ERROR] Init system not found
+/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/lib/API/Startup.js:216
+      throw new Error('Init system not found');
+      ^
+
+Error: Init system not found
+    at CLI.startup (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/lib/API/Startup.js:216:13)
+    at Command.<anonymous> (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/lib/binaries/CLI.js:716:9)
+    at Command.listener (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/node_modules/commander/index.js:315:8)
+    at Command.emit (node:events:524:28)
+    at Command.parseArgs (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/node_modules/commander/index.js:651:12)
+    at Command.parse (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/node_modules/commander/index.js:474:21)
+    at Timeout._onTimeout (/home/u150266992/.nvm/versions/node/v20.19.2/lib/node_modules/pm2/lib/binaries/CLI.js:213:15)
+    at listOnTimeout (node:internal/timers:581:17)
+    at process.processTimers (node:internal/timers:519:7)
+
+Node.js v20.19.2
